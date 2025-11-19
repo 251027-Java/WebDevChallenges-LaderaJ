@@ -1,100 +1,120 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
     <div>an image</div>
 
-    <h1>About</h1>
-    <p>Some text about the website.</p>
+    <div class="about">
+        <h1>About</h1>
+        <p>Some text about the website.</p>
+    </div>
 
-    <h2>Our Locations</h2>
+    <div class="locations">
+        <h2>Our Locations</h2>
 
-    <ul>
-        <li>USA</li>
         <ul>
-            <li>New York</li>
-            <li>Columbus</li>
-            <li>Austin</li>
-            <li>Philly</li>
+            <li>USA</li>
+            <ul>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">Columbus</a></li>
+                <li><a href="#">Austin</a></li>
+                <li><a href="#">Philly</a></li>
+            </ul>
         </ul>
-    </ul>
 
-    <ul>
-        <li>World</li>
         <ul>
-            <li>Ottawa</li>
-            <li>Sydney</li>
+            <li>World</li>
+            <ul>
+                <li><a href="#">Ottawa</a></li>
+                <li><a href="#">Sydney</a></li>
 
+            </ul>
         </ul>
-    </ul>
+    </div>
 
-    <h2>Upcoming Classes</h2>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Location</th>
-                <th>Topic</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>New York</td>
-                <td>JavaScript & jQuery</td>
-            </tr>
-            <tr>
-                <td>San Francisco</td>
-                <td>HTML & CSS</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="upcoming-classes">
+        <h2>Upcoming Classes</h2>
 
-    <h2>Sign Up!</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Topic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>New York</td>
+                    <td>JavaScript & jQuery</td>
+                </tr>
+                <tr>
+                    <td>San Francisco</td>
+                    <td>HTML & CSS</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <form action="">
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" name="name" required>
-        </div>
-        
-        <div>
-            <label for="email">Email:</label>
-            <input type="text" name="email" required>
-        </div>
-        
-        <div>
-            <label for="Location">Location:</label>
-            <!-- <input type="m"> -->
-        </div>
+    <div class="sign-up">
+        <h2>Sign Up!</h2>
 
-        <fieldset>
-            <legend>Gender:</legend>
-            
-            <span>
-                <label for="female">Female</label>
-                <input type="radio" name="female">
-            </span>
+        <form action="">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
 
-            <span>
-                <label for="male">Male</label>
-                <input type="radio" name="male">
-            </span>
-        </fieldset>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
 
-        <div>
-            <label for="experience">Experience:</label>
-            <br>
-            <textarea name="experience" id="experience"></textarea>
-        </div>
+            <div>
+                <label for="location">Location:</label>
+                <select name="location" id="location">
+                    <option value="New York">New York</option>
+                    <option value="New York">Columbus</option>
+                    <option value="New York">Austin</option>
+                    <option value="New York">Philly</option>
+                    <option value="New York">Ottawa</option>
+                    <option value="New York">Sydney</option>
+                </select>
+            </div>
 
-        <button type="button">Sign Up</button>
-    </form>
+            <fieldset>
+                <legend>Gender:</legend>
 
-    <footer>TODO</footer>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                </div>
+            </fieldset>
+
+            <div class="experience-area">
+                <label for="experience">Experience:</label>
+                <br>
+                <textarea name="experience" id="experience"></textarea>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <footer>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Flickr</a>
+    </footer>
 
 </body>
 

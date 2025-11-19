@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+}
+
+footer>span:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.experience-area {
+    margin: .5rem 0 .5rem 0;
+}
+
+.about {
+    margin-bottom: 3rem;
+}
