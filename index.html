@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div>an image</div>
+    <div class="image-box">an image</div>
 
     <div class="about">
         <h1>About</h1>
@@ -67,29 +67,32 @@
         <h2>Sign Up!</h2>
 
         <form action="">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" required>
+            <div class="initial-sign-up">
+                <div class="restricted-size">
+                    <label for="name">Name:</label>
+                    <input class="last-item" type="text" name="name" id="name" required>
+                </div>
+
+                <div class="restricted-size">
+                    <label for="email">Email:</label>
+                    <input class="last-item" type="email" name="email" id="email" required>
+                </div>
+
+                <div class="restricted-size">
+                    <label for="location">Location:</label>
+                    <select class="last-item" name="location" id="location">
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="New York">New York</option>
+                        <option value="Columbus">Columbus</option>
+                        <option value="Austin">Austin</option>
+                        <option value="Philly">Philly</option>
+                        <option value="Ottawa">Ottawa</option>
+                        <option value="Sydney">Sydney</option>
+                    </select>
+                </div>
             </div>
 
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-
-            <div>
-                <label for="location">Location:</label>
-                <select name="location" id="location">
-                    <option value="New York">New York</option>
-                    <option value="New York">Columbus</option>
-                    <option value="New York">Austin</option>
-                    <option value="New York">Philly</option>
-                    <option value="New York">Ottawa</option>
-                    <option value="New York">Sydney</option>
-                </select>
-            </div>
-
-            <fieldset>
+            <fieldset class="gender">
                 <legend>Gender:</legend>
 
                 <div>
