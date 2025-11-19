@@ -1,0 +1,58 @@
+.experience-area {
+    margin: .5rem 0 .5rem 0;
+}
+
+.image-box {
+    border: .4rem solid black;
+    max-width: 20rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.about {
+    margin-bottom: 3rem;
+}
+
+.restricted-size {
+    display: flex;
+    max-width: 11rem;
+    gap: .25rem;
+}
+
+.restricted-size>:last-child {
+    flex: 1;
+    min-width: 0;
+}
+
+.restricted-size>select {
+    font-size: .7em;
+}
+
+.gender {
+    max-width: 30rem;
+}
+
+.initial-sign-up {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.sign-up {
+    margin-bottom: 3rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+footer {
+    display: flex;
+}
+
+footer>:not(:last-child)::after {
+    content: "|";
+    padding: 0 .2rem 0 .2rem;
+    color: initial;
+}
