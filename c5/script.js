@@ -7,3 +7,5 @@ function addToList() {
 function alertList() {
     alert(list);
 }
+
+document.querySelector('button').addEventListener('click', addToList);
